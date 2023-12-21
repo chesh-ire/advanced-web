@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        .formstyle{
+            width: 300px;
+            height:330px;
+            margin:auto;
+            border : 10px solid skyblue;
+            border-radius: 5px;
+            padding : 20px;
+        }
+        input [type="button"]{
+            width : 70px;
+            height : 50px;
+            background-color: pink;
+            color: black;
+        }
+        input [type = "text"]{
+            width:100%;
+            background-color: white;
+            color: black;
+            height: 20%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="formstyle">
+        <form name="form1">
+            <input type="text" id="cal" name="ans"><br><br>
+            <input type="button" value="1" onclick="form1.ans.value+='1'">
+            <input type="button" value="2" onclick="form1.ans.value+='2'">
+            <input type="button" value="3" onclick="form1.ans.value+='3'">
+            <input type="button" value="+" onclick="form1.ans.value+='+'">
+            <br><br>
+            <input type="button" value="4" onclick="form1.ans.value+='4'">
+            <input type="button" value="5" onclick="form1.ans.value+='5'">
+            <input type="button" value="6" onclick="form1.ans.value+='6'">
+            <input type="button" value="-" onclick="form1.ans.value+='-'">
+            <br><br>
+            <input type="button" value="7" onclick="form1.ans.value+='7'">
+            <input type="button" value="8" onclick="form1.ans.value+='8'">
+            <input type="button" value="9" onclick="form1.ans.value+='9'">
+            <input type="button" value="*" onclick="form1.ans.value+='*'">
+            <br><br>
+            <input type="button" value="/" onclick="form1.ans.value+='/'">
+            <input type="button" value="0" onclick="form1.ans.value+='0'">
+            <input type="button" value="C" onclick="form1.ans.value=''">
+            <input type="button" value="=" onclick="form1.ans.value=eval(form1.ans.value)">
+            <br>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js</title>
+</head>
+
+<body>
+    <form onsubmit="large()">
+        Enter the first number:
+        <input type="number" id="number1">
+        Enter the second number:
+        <input type="number" id="number2">
+        Enter the third number:
+        <input type="number" id="number3">
+        <input type="submit">
+    </form>
+
+    <script>
+        function large() {
+          //  event.preventDefault(); // Prevent form submission and page reload
+
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var number3 = document.getElementById("number3").value;
+
+            if (number1 > number2) {
+                if (number1 > number3) {
+                    alert("Number in box 1 is the largest.");
+                } else {
+                    alert("Number in box 3 is the largest.");
+                }
+            } else {
+                if (number2 > number3) {
+                    alert("Number in box 2 is the largest.");
+                } else {
+                    alert("Number in box 3 is the largest.");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
+
